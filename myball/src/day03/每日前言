@@ -1,0 +1,43 @@
+# 爱情总让你渴望又感到烦恼
+首先总结一下昨天学到的东西,比较精彩的知识点
+
+<font color=red>如何把一个integer对象转化为数组或者字符串</font>
+
+具体如下
+* ①位制转化
+- integer.tohexString()
+- integer.toString()
+- integer.tooctalString()
+- integer.toBineryString()
+* 字符串的反转
+- **说起来还挺有意思，字符串的相等的比较是不能够使用==号的，需要使用相应的函数equals**
+- 字符串的反转是使用Stringbuffer来进行反转的，建议封装成一个函数
+```java
+public static String reverse_1(String ss){
+    return new StringBuffer(ss).reverse().toString();    
+}
+```
+* java中的eval函数
+- java中本来是没有eval函数的但是，我们可以使用engine来进行字符串的解析
+````
+scriptEngineManager manager = new ScriptEngineManager();
+ScriptEngine engine = manager.getEngineByName("js");
+try {
+    int result = (int)engine.eval(ss);
+    if (result==i )
+    System.out.println(result);
+}
+catch (Exception e){
+    continue;
+}
+````
+* 从int到char[]数组
+- the method:
+```
+int k;
+integer kk= k;
+char[]aa = kk.toString().tocharArray;
+```
+* 初始化数组的方法
+String[] nn = new Stringp[]{"we","have","a","problem"};
+现在是8/25 11点 这次我想坚持的时间长一点。

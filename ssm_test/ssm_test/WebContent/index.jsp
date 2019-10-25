@@ -50,44 +50,44 @@
                                 <span class="clear">
                                     <span class="block m-t-xs" style="font-size:20px;">
                                         <i class="fa fa-area-chart"></i>
-                                        <strong class="font-bold">在线系统</strong>
+                                        <strong class="font-bold">仓库管理系统</strong>
                                     </span>
                                 </span>
                             </a>
                         </div>
-                        <div class="logo-element">思途
+                        <div class="logo-element">仓库管理
                         </div>
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">管理员功能菜单</span>
+                        <span class="ng-scope">仓库管理功能菜单</span>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="User/index">
+                        <a class="J_menuItem" href="Cargo/index">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">用户管理</span>
+                            <span class="nav-label">货物管理</span>
                         </a>
                     </li>
                      <li>
                         <a class="J_menuItem" href="Class/index">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">班级管理</span>
+                            <span class="nav-label">仓库管理</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a class="J_menuItem" href="javascript:;" onclick="openpass();">
+                        <a class="J_menuItem" href="In_table/index">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">修改密码</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="User/index?cmd=outlogin">
-                            <i class="fa fa-home"></i>
-                            <span class="nav-label">退出系统</span>
+                            <span class="nav-label">入库统计</span>
                         </a>
                     </li>
                     
-                   
+                    
+                    <li>
+                        <a class="J_menuItem" href="login.html">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">账号登出</span>
+                        </a>
+                    </li>
                    
                 </ul>
             </div>

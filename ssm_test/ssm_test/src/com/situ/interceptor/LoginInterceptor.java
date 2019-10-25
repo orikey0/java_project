@@ -2,36 +2,46 @@ package com.situ.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 @Component
-public class LoginInterceptor implements HandlerInterceptor{
+public class LoginInterceptor implements HandlerInterceptor {
 
 	@Override
 	public void afterCompletion(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3)
 			throws Exception {
-		// TODO Auto-generated method stub
-		System.out.println(2);
 		
 	}
 
 	@Override
 	public void postHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, ModelAndView arg3)
 			throws Exception {
-		// TODO Auto-generated method stub
-		System.out.println(3);
+		
 	}
 
 	@Override
-	public boolean preHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2) throws Exception {
-		// TODO Auto-generated method stub
-		System.out.println(4);
+	public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Object arg2) throws Exception {
+		String url= req.getRequestURI();
+		String c=req.getContextPath();
+//		System.out.println(url);
+		if(url.equals(c+"/login.html")||url.equals(c+"/")||url.equals(c+"/User/login")) {
+//			System.out.println("ok");
+			return true;
+		}else {
+			HttpSession s=req.getSession();
+			if(s.getAttribute("user")==null) {
+				if(url.lastIndexOf('.')>0) return true;
+				resp.sendRedirect(c+"/login.html");
+				return false;
+			}else {
+				return true;
+			}
+		}
 		
-		return true;
 	}
-	
+
 }
