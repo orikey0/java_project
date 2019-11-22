@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="E:\jre1.8.0_201" version="1.8.0_201">
-<bootpath>
-<entry path="E:\jre1.8.0_201\lib\resources.jar"/>
-<entry path="E:\jre1.8.0_201\lib\rt.jar"/>
-<entry path="E:\jre1.8.0_201\lib\sunrsasign.jar"/>
-<entry path="E:\jre1.8.0_201\lib\jsse.jar"/>
-<entry path="E:\jre1.8.0_201\lib\jce.jar"/>
-<entry path="E:\jre1.8.0_201\lib\charsets.jar"/>
-<entry path="E:\jre1.8.0_201\lib\jfr.jar"/>
-<entry path="E:\jre1.8.0_201\classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="E:\jre1.8.0_201\lib\ext"/>
-<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="E:\jre1.8.0_201\lib\endorsed"/>
-</endorsedDirs>
-</libraryInfo>
+    <libraryInfo home="E:\Development_kit\AdoptOpenJDK\jdk-11.0.3.7-hotspot" version="11.0.3"/>
 </libraryInfos>
